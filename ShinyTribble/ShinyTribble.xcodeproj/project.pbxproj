@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B09BCA9318E3305D00D86420 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B09BCA9218E3305D00D86420 /* Foundation.framework */; };
+		B09BCA9518E3305D00D86420 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B09BCA9418E3305D00D86420 /* CoreGraphics.framework */; };
+		B09BCA9718E3305D00D86420 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B09BCA9618E3305D00D86420 /* UIKit.framework */; };
+		B09BCA9D18E3305D00D86420 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B09BCA9B18E3305D00D86420 /* InfoPlist.strings */; };
+		B09BCA9F18E3305D00D86420 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B09BCA9E18E3305D00D86420 /* main.m */; };
+		B09BCAA318E3305D00D86420 /* VBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B09BCAA218E3305D00D86420 /* VBAppDelegate.m */; };
+		B09BCAA618E3305D00D86420 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B09BCAA418E3305D00D86420 /* Main.storyboard */; };
+		B09BCAA918E3305D00D86420 /* VBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B09BCAA818E3305D00D86420 /* VBViewController.m */; };
+		B09BCAAB18E3305D00D86420 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B09BCAAA18E3305D00D86420 /* Images.xcassets */; };
+		B09BCAB218E3305D00D86420 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B09BCAB118E3305D00D86420 /* XCTest.framework */; };
+		B09BCAB318E3305D00D86420 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B09BCA9218E3305D00D86420 /* Foundation.framework */; };
+		B09BCAB418E3305D00D86420 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B09BCA9618E3305D00D86420 /* UIKit.framework */; };
+		B09BCABC18E3305D00D86420 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B09BCABA18E3305D00D86420 /* InfoPlist.strings */; };
+		B09BCABE18E3305D00D86420 /* ShinyTribbleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B09BCABD18E3305D00D86420 /* ShinyTribbleTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B09BCAB518E3305D00D86420 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B09BCA8718E3305D00D86420 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B09BCA8E18E3305D00D86420;
+			remoteInfo = ShinyTribble;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B09BCA8F18E3305D00D86420 /* ShinyTribble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShinyTribble.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B09BCA9218E3305D00D86420 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B09BCA9418E3305D00D86420 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B09BCA9618E3305D00D86420 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B09BCA9A18E3305D00D86420 /* ShinyTribble-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ShinyTribble-Info.plist"; sourceTree = "<group>"; };
+		B09BCA9C18E3305D00D86420 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B09BCA9E18E3305D00D86420 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B09BCAA018E3305D00D86420 /* ShinyTribble-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ShinyTribble-Prefix.pch"; sourceTree = "<group>"; };
+		B09BCAA118E3305D00D86420 /* VBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VBAppDelegate.h; sourceTree = "<group>"; };
+		B09BCAA218E3305D00D86420 /* VBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VBAppDelegate.m; sourceTree = "<group>"; };
+		B09BCAA518E3305D00D86420 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B09BCAA718E3305D00D86420 /* VBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VBViewController.h; sourceTree = "<group>"; };
+		B09BCAA818E3305D00D86420 /* VBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VBViewController.m; sourceTree = "<group>"; };
+		B09BCAAA18E3305D00D86420 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B09BCAB018E3305D00D86420 /* ShinyTribbleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShinyTribbleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B09BCAB118E3305D00D86420 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		B09BCAB918E3305D00D86420 /* ShinyTribbleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ShinyTribbleTests-Info.plist"; sourceTree = "<group>"; };
+		B09BCABB18E3305D00D86420 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B09BCABD18E3305D00D86420 /* ShinyTribbleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShinyTribbleTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B09BCA8C18E3305D00D86420 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B09BCA9518E3305D00D86420 /* CoreGraphics.framework in Frameworks */,
+				B09BCA9718E3305D00D86420 /* UIKit.framework in Frameworks */,
+				B09BCA9318E3305D00D86420 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B09BCAAD18E3305D00D86420 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B09BCAB218E3305D00D86420 /* XCTest.framework in Frameworks */,
+				B09BCAB418E3305D00D86420 /* UIKit.framework in Frameworks */,
+				B09BCAB318E3305D00D86420 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B09BCA8618E3305D00D86420 = {
+			isa = PBXGroup;
+			children = (
+				B09BCA9818E3305D00D86420 /* ShinyTribble */,
+				B09BCAB718E3305D00D86420 /* ShinyTribbleTests */,
+				B09BCA9118E3305D00D86420 /* Frameworks */,
+				B09BCA9018E3305D00D86420 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B09BCA9018E3305D00D86420 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B09BCA8F18E3305D00D86420 /* ShinyTribble.app */,
+				B09BCAB018E3305D00D86420 /* ShinyTribbleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B09BCA9118E3305D00D86420 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B09BCA9218E3305D00D86420 /* Foundation.framework */,
+				B09BCA9418E3305D00D86420 /* CoreGraphics.framework */,
+				B09BCA9618E3305D00D86420 /* UIKit.framework */,
+				B09BCAB118E3305D00D86420 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B09BCA9818E3305D00D86420 /* ShinyTribble */ = {
+			isa = PBXGroup;
+			children = (
+				B09BCAA118E3305D00D86420 /* VBAppDelegate.h */,
+				B09BCAA218E3305D00D86420 /* VBAppDelegate.m */,
+				B09BCAA418E3305D00D86420 /* Main.storyboard */,
+				B09BCAA718E3305D00D86420 /* VBViewController.h */,
+				B09BCAA818E3305D00D86420 /* VBViewController.m */,
+				B09BCAAA18E3305D00D86420 /* Images.xcassets */,
+				B09BCA9918E3305D00D86420 /* Supporting Files */,
+			);
+			path = ShinyTribble;
+			sourceTree = "<group>";
+		};
+		B09BCA9918E3305D00D86420 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B09BCA9A18E3305D00D86420 /* ShinyTribble-Info.plist */,
+				B09BCA9B18E3305D00D86420 /* InfoPlist.strings */,
+				B09BCA9E18E3305D00D86420 /* main.m */,
+				B09BCAA018E3305D00D86420 /* ShinyTribble-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B09BCAB718E3305D00D86420 /* ShinyTribbleTests */ = {
+			isa = PBXGroup;
+			children = (
+				B09BCABD18E3305D00D86420 /* ShinyTribbleTests.m */,
+				B09BCAB818E3305D00D86420 /* Supporting Files */,
+			);
+			path = ShinyTribbleTests;
+			sourceTree = "<group>";
+		};
+		B09BCAB818E3305D00D86420 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B09BCAB918E3305D00D86420 /* ShinyTribbleTests-Info.plist */,
+				B09BCABA18E3305D00D86420 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B09BCA8E18E3305D00D86420 /* ShinyTribble */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B09BCAC118E3305D00D86420 /* Build configuration list for PBXNativeTarget "ShinyTribble" */;
+			buildPhases = (
+				B09BCA8B18E3305D00D86420 /* Sources */,
+				B09BCA8C18E3305D00D86420 /* Frameworks */,
+				B09BCA8D18E3305D00D86420 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShinyTribble;
+			productName = ShinyTribble;
+			productReference = B09BCA8F18E3305D00D86420 /* ShinyTribble.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B09BCAAF18E3305D00D86420 /* ShinyTribbleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B09BCAC418E3305D00D86420 /* Build configuration list for PBXNativeTarget "ShinyTribbleTests" */;
+			buildPhases = (
+				B09BCAAC18E3305D00D86420 /* Sources */,
+				B09BCAAD18E3305D00D86420 /* Frameworks */,
+				B09BCAAE18E3305D00D86420 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B09BCAB618E3305D00D86420 /* PBXTargetDependency */,
+			);
+			name = ShinyTribbleTests;
+			productName = ShinyTribbleTests;
+			productReference = B09BCAB018E3305D00D86420 /* ShinyTribbleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B09BCA8718E3305D00D86420 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = VB;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Ariel Rodriguez";
+				TargetAttributes = {
+					B09BCAAF18E3305D00D86420 = {
+						TestTargetID = B09BCA8E18E3305D00D86420;
+					};
+				};
+			};
+			buildConfigurationList = B09BCA8A18E3305D00D86420 /* Build configuration list for PBXProject "ShinyTribble" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B09BCA8618E3305D00D86420;
+			productRefGroup = B09BCA9018E3305D00D86420 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B09BCA8E18E3305D00D86420 /* ShinyTribble */,
+				B09BCAAF18E3305D00D86420 /* ShinyTribbleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B09BCA8D18E3305D00D86420 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B09BCAAB18E3305D00D86420 /* Images.xcassets in Resources */,
+				B09BCA9D18E3305D00D86420 /* InfoPlist.strings in Resources */,
+				B09BCAA618E3305D00D86420 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B09BCAAE18E3305D00D86420 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B09BCABC18E3305D00D86420 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B09BCA8B18E3305D00D86420 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B09BCAA318E3305D00D86420 /* VBAppDelegate.m in Sources */,
+				B09BCAA918E3305D00D86420 /* VBViewController.m in Sources */,
+				B09BCA9F18E3305D00D86420 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B09BCAAC18E3305D00D86420 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B09BCABE18E3305D00D86420 /* ShinyTribbleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B09BCAB618E3305D00D86420 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B09BCA8E18E3305D00D86420 /* ShinyTribble */;
+			targetProxy = B09BCAB518E3305D00D86420 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B09BCA9B18E3305D00D86420 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B09BCA9C18E3305D00D86420 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B09BCAA418E3305D00D86420 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B09BCAA518E3305D00D86420 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B09BCABA18E3305D00D86420 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B09BCABB18E3305D00D86420 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B09BCABF18E3305D00D86420 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B09BCAC018E3305D00D86420 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B09BCAC218E3305D00D86420 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ShinyTribble/ShinyTribble-Prefix.pch";
+				INFOPLIST_FILE = "ShinyTribble/ShinyTribble-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B09BCAC318E3305D00D86420 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ShinyTribble/ShinyTribble-Prefix.pch";
+				INFOPLIST_FILE = "ShinyTribble/ShinyTribble-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B09BCAC518E3305D00D86420 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ShinyTribble.app/ShinyTribble";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ShinyTribble/ShinyTribble-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ShinyTribbleTests/ShinyTribbleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		B09BCAC618E3305D00D86420 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ShinyTribble.app/ShinyTribble";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ShinyTribble/ShinyTribble-Prefix.pch";
+				INFOPLIST_FILE = "ShinyTribbleTests/ShinyTribbleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B09BCA8A18E3305D00D86420 /* Build configuration list for PBXProject "ShinyTribble" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B09BCABF18E3305D00D86420 /* Debug */,
+				B09BCAC018E3305D00D86420 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B09BCAC118E3305D00D86420 /* Build configuration list for PBXNativeTarget "ShinyTribble" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B09BCAC218E3305D00D86420 /* Debug */,
+				B09BCAC318E3305D00D86420 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B09BCAC418E3305D00D86420 /* Build configuration list for PBXNativeTarget "ShinyTribbleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B09BCAC518E3305D00D86420 /* Debug */,
+				B09BCAC618E3305D00D86420 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B09BCA8718E3305D00D86420 /* Project object */;
+}
