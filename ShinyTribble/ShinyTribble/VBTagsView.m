@@ -10,6 +10,31 @@
 #import "UIView+LayoutHelpers.h"
 #import "NSLayoutConstraint+SelfInstall.h"
 
+NSString *const kCBLStudentConversationAuthorTimestampFormat = @"%@ by %@";
+@interface CBLTagLabel : UILabel
+
+@end
+
+@implementation CBLTagLabel
+
+- (void)drawTextInRect:(CGRect)rect
+{
+	
+	[super drawTextInRect:UIEdgeInsetsInsetRect(rect, UIEdgeInsetsMake(2.0, 8.0, 2.0, 8.0))];
+	
+}
+
+- (CGSize)intrinsicContentSize
+{
+	
+	CGSize intrinsicContentSize = [super intrinsicContentSize];
+	intrinsicContentSize.width = intrinsicContentSize.width+16.0;
+	intrinsicContentSize.height = intrinsicContentSize.height+4.0;
+	return intrinsicContentSize;
+	
+}
+@end
+
 static const CGFloat kDefaultVerticalPad = 8.0;
 static const CGFloat kDefaultHorizontalPad = 8.0;
 
@@ -17,6 +42,7 @@ static const CGFloat kDefaultHorizontalPad = 8.0;
 @interface VBTagsView ()
 @property (nonatomic, strong) NSArray *labels;
 @property (nonatomic) CGFloat calculatedHeight;
+@property (nonatomic) CGFloat calculatedWidth;
 @end
 
 @implementation VBTagsView
@@ -37,7 +63,7 @@ static const CGFloat kDefaultHorizontalPad = 8.0;
         NSMutableArray *mutableLabels = [[NSMutableArray alloc] initWithCapacity:[tags count]];
         [tags enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
             
-            UILabel *label = [[UILabel alloc] initWithFrame:CGRectZero];
+            CBLTagLabel *label = [[CBLTagLabel alloc] initWithFrame:CGRectZero];
             [self addSubview:label];
             [label setText:(NSString *)obj];
             [label setBackgroundColor:[UIColor lightGrayColor]];
@@ -48,6 +74,11 @@ static const CGFloat kDefaultHorizontalPad = 8.0;
                                                    forAxis:UILayoutConstraintAxisHorizontal];
             [label setContentCompressionResistancePriority:1000
                                                    forAxis:UILayoutConstraintAxisVertical];
+            
+            CALayer *layer = [label layer];
+            
+            [layer setCornerRadius:3.0];
+            [layer setMasksToBounds:YES];
             
             [mutableLabels addObject:label];
             
@@ -77,7 +108,7 @@ static const CGFloat kDefaultHorizontalPad = 8.0;
     
     [self setCalculatedHeight:21.0];
     
-    for ( UILabel *l in [self labels] ) {
+    for ( CBLTagLabel *l in [self labels] ) {
         
         NSLayoutConstraint *labelWidthConstraint = [l vb_widthConstraint];
         CGFloat labelWidth = [labelWidthConstraint constant];
@@ -111,7 +142,15 @@ static const CGFloat kDefaultHorizontalPad = 8.0;
                                                                 constant:yOrigin];
         [lyc vb_install];
         
-        xOrigin += (labelWidth + kDefaultHorizontalPad);
+        CGFloat lineWidth = xOrigin + labelWidth;
+        
+        if ( lineWidth > [self calculatedWidth] ) {
+            
+            [self setCalculatedWidth:lineWidth];
+            
+        }
+        
+        xOrigin = lineWidth + kDefaultHorizontalPad;
         
     }
     
@@ -122,7 +161,7 @@ static const CGFloat kDefaultHorizontalPad = 8.0;
 - (CGSize)intrinsicContentSize
 {
     
-    CGSize intrinsicContentSize = CGSizeMake([self preferredMaxLayoutWidth], [self calculatedHeight]);
+    CGSize intrinsicContentSize = CGSizeMake([self calculatedWidth], [self calculatedHeight]);
     
     return intrinsicContentSize;
     
