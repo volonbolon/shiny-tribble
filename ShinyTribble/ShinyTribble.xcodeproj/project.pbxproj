@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B0999D6718E604DE00610C0E /* NSLayoutConstraint+SelfInstall.m in Sources */ = {isa = PBXBuildFile; fileRef = B0999D6618E604DE00610C0E /* NSLayoutConstraint+SelfInstall.m */; };
+		B0999D6A18E6054800610C0E /* UIView+VBHierarchySupport.m in Sources */ = {isa = PBXBuildFile; fileRef = B0999D6918E6054800610C0E /* UIView+VBHierarchySupport.m */; };
+		B09BB22E18E8A898000025F1 /* VBTagsView.m in Sources */ = {isa = PBXBuildFile; fileRef = B09BB22D18E8A898000025F1 /* VBTagsView.m */; };
+		B09BB23118E8B766000025F1 /* UIView+LayoutHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = B09BB23018E8B766000025F1 /* UIView+LayoutHelpers.m */; };
 		B09BCA9318E3305D00D86420 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B09BCA9218E3305D00D86420 /* Foundation.framework */; };
 		B09BCA9518E3305D00D86420 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B09BCA9418E3305D00D86420 /* CoreGraphics.framework */; };
 		B09BCA9718E3305D00D86420 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B09BCA9618E3305D00D86420 /* UIKit.framework */; };
@@ -34,6 +38,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B0999D6518E604DE00610C0E /* NSLayoutConstraint+SelfInstall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+SelfInstall.h"; sourceTree = "<group>"; };
+		B0999D6618E604DE00610C0E /* NSLayoutConstraint+SelfInstall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+SelfInstall.m"; sourceTree = "<group>"; };
+		B0999D6818E6054800610C0E /* UIView+VBHierarchySupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+VBHierarchySupport.h"; sourceTree = "<group>"; };
+		B0999D6918E6054800610C0E /* UIView+VBHierarchySupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+VBHierarchySupport.m"; sourceTree = "<group>"; };
+		B09BB22C18E8A898000025F1 /* VBTagsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBTagsView.h; sourceTree = "<group>"; };
+		B09BB22D18E8A898000025F1 /* VBTagsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBTagsView.m; sourceTree = "<group>"; };
+		B09BB22F18E8B766000025F1 /* UIView+LayoutHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LayoutHelpers.h"; sourceTree = "<group>"; };
+		B09BB23018E8B766000025F1 /* UIView+LayoutHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LayoutHelpers.m"; sourceTree = "<group>"; };
 		B09BCA8F18E3305D00D86420 /* ShinyTribble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShinyTribble.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B09BCA9218E3305D00D86420 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B09BCA9418E3305D00D86420 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -119,6 +131,14 @@
 				B09BCAA818E3305D00D86420 /* VBViewController.m */,
 				B09BCAAA18E3305D00D86420 /* Images.xcassets */,
 				B09BCA9918E3305D00D86420 /* Supporting Files */,
+				B0999D6518E604DE00610C0E /* NSLayoutConstraint+SelfInstall.h */,
+				B0999D6618E604DE00610C0E /* NSLayoutConstraint+SelfInstall.m */,
+				B0999D6818E6054800610C0E /* UIView+VBHierarchySupport.h */,
+				B0999D6918E6054800610C0E /* UIView+VBHierarchySupport.m */,
+				B09BB22C18E8A898000025F1 /* VBTagsView.h */,
+				B09BB22D18E8A898000025F1 /* VBTagsView.m */,
+				B09BB22F18E8B766000025F1 /* UIView+LayoutHelpers.h */,
+				B09BB23018E8B766000025F1 /* UIView+LayoutHelpers.m */,
 			);
 			path = ShinyTribble;
 			sourceTree = "<group>";
@@ -251,7 +271,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B09BCAA318E3305D00D86420 /* VBAppDelegate.m in Sources */,
+				B09BB22E18E8A898000025F1 /* VBTagsView.m in Sources */,
 				B09BCAA918E3305D00D86420 /* VBViewController.m in Sources */,
+				B09BB23118E8B766000025F1 /* UIView+LayoutHelpers.m in Sources */,
+				B0999D6A18E6054800610C0E /* UIView+VBHierarchySupport.m in Sources */,
+				B0999D6718E604DE00610C0E /* NSLayoutConstraint+SelfInstall.m in Sources */,
 				B09BCA9F18E3305D00D86420 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -457,6 +481,7 @@
 				B09BCAC318E3305D00D86420 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B09BCAC418E3305D00D86420 /* Build configuration list for PBXNativeTarget "ShinyTribbleTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +490,7 @@
 				B09BCAC618E3305D00D86420 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
